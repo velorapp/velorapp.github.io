@@ -3,26 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Velorapp Support</title>
+<title>Support · Velorapp</title>
 <meta name="description" content="Contact Velorapp and get help with our iPhone apps, subscriptions, refunds and restoring purchases.">
 <link rel="canonical" href="https://velorapp.github.io/support">
-<meta property="og:title" content="Velorapp Support">
+<meta property="og:site_name" content="Velorapp">
+<meta property="og:title" content="Support · Velorapp">
 <meta property="og:description" content="Contact Velorapp and get help with our iPhone apps, subscriptions, refunds and restoring purchases.">
 <meta property="og:url" content="https://velorapp.github.io/support">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#F4F6FA" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0A0E1C" media="(prefers-color-scheme: dark)">
+<meta property="og:image" content="https://velorapp.github.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F6F7FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#07080F" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap">
+<link rel="preload" href="/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/styles.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="/site.js" defer></script>
+
 </head>
-<body>
+<body class="">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="Velorapp home"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#3150F5"/><path d="M9 10.5l7 12 7-12" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24.6" cy="7.6" r="3" fill="#FFB020"/></svg><span>Velorapp</span></a>
-    <nav class="nav" aria-label="Main"><a href="/#apps" class="nav-hide">Apps</a><a href="/#how-we-build" class="nav-hide">How we build</a><a href="/#faq" class="nav-hide">FAQ</a><a href="/support" class="nav-cta" aria-current="page">Support</a></nav>
+    <a class="logo" href="/" aria-label="Velorapp home"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#4453FF"/><path d="M9 10.5l7 12 7-12" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24.6" cy="7.6" r="3" fill="#FFBE2E"/></svg><span>Velorapp</span></a>
+    <nav class="nav" aria-label="Main"><a href="/#apps" class="nav-hide">Apps</a><a href="/#how" class="nav-hide">How we work</a><a href="/#faq" class="nav-hide">FAQ</a><a href="/support" class="nav-cta" aria-current="page">Support</a></nav>
   </div>
 </header>
 <main id="main">
@@ -36,13 +43,11 @@
     <div class="card">
       <h2>Write to us</h2>
       <div class="email-chip"><span class="email pending">Our support address is being set up. Check back soon.</span></div>
-      <p style="margin-top:10px;color:var(--muted)">Include your iPhone model and the app version (in the app's Settings). We usually reply within two working days.</p>
+      <p style="color:var(--muted)">Include your iPhone model and the app version (in the app's Settings). We usually reply within two working days.</p>
     </div>
 
     <h2>Help for each app</h2>
-    <ul>
-      <li><a href="/brightmorn-support">Brightmorn support</a>: subscriptions, widgets, reminders, your data and urgent help.</li>
-    </ul>
+    <ul><li><a href="/brightmorn-support">Brightmorn support</a></li></ul>
 
     <h2>Billing</h2>
     <h3>Cancel a subscription</h3>
@@ -51,7 +56,7 @@
     <p>Apple handles all App Store payments, so we can't issue refunds ourselves. Request one at <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>.</p>
     <h3>Restore a purchase</h3>
     <p>Sign in with the Apple Account you used to subscribe, open the app and tap <span class="path">Restore purchases</span> in its settings.</p>
-    <p style="margin-top:20px">More detail: <a href="/subscriptions">Subscriptions &amp; Refunds</a> · <a href="/terms">Terms of Use</a> · <a href="/privacy">Privacy Policy</a></p>
+    <p style="margin-top:22px"><a href="/subscriptions">Subscriptions &amp; Refunds</a> · <a href="/terms">Terms of Use</a> · <a href="/privacy">Privacy Policy</a></p>
   </div>
 </section>
 
@@ -60,32 +65,14 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a class="logo" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#3150F5"/><path d="M9 10.5l7 12 7-12" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24.6" cy="7.6" r="3" fill="#FFB020"/></svg><span>Velorapp</span></a>
-        <p>Calm, private iPhone apps. Each one does a single job well.</p>
+        <a class="logo" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#4453FF"/><path d="M9 10.5l7 12 7-12" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24.6" cy="7.6" r="3" fill="#FFBE2E"/></svg><span>Velorapp</span></a>
+        <p>An independent iPhone app studio. We design, build and look after every app ourselves.</p>
       </div>
-      <div>
-        <h4>Apps</h4>
-        <ul>
-          <li><a href="/brightmorn">Brightmorn</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Help</h4>
-        <ul>
-          <li><a href="/support">Support</a></li>
-          <li><a href="/brightmorn-support">Brightmorn support</a></li>
-          <li><a href="/#faq">FAQ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="/terms">Terms of Use</a></li>
-          <li><a href="/privacy">Privacy Policy</a></li>
-          <li><a href="/subscriptions">Subscriptions &amp; Refunds</a></li>
-        </ul>
-      </div>
+      <div><h4>Apps</h4><ul><li><a href="/brightmorn">Brightmorn</a></li><li><span>More on the way</span></li></ul></div>
+      <div><h4>Help</h4><ul><li><a href="/support">Support</a></li><li><a href="/#faq">FAQ</a></li><li><a href="/subscriptions">Cancel or refund</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="/terms">Terms of Use</a></li><li><a href="/privacy">Privacy Policy</a></li><li><a href="/subscriptions">Subscriptions &amp; Refunds</a></li></ul></div>
     </div>
+    <svg class="wordmark" viewBox="0 0 1000 250" aria-hidden="true" focusable="false"><defs><linearGradient id="wm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="wm-top"/><stop offset="1" class="wm-bottom"/></linearGradient></defs><text x="500" y="196" text-anchor="middle" textLength="992" lengthAdjust="spacingAndGlyphs" font-size="250" fill="url(#wm)">Velorapp</text></svg>
     <div class="foot-bottom">
       <span>© 2026 Velorapp. All rights reserved.</span>
       <span>Velorapp is the studio name of Mertcan Erbasi, an independent developer.</span>

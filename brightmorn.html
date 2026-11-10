@@ -3,74 +3,86 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Brightmorn: Drink Less</title>
-<meta name="description" content="Brightmorn helps you drink less, one day at a time. Track alcohol-free days, see what you gain and get through cravings. Private by design.">
+<title>Brightmorn: Drink Less · Velorapp</title>
+<meta name="description" content="Brightmorn helps you drink less, one day at a time. Track alcohol-free days, see what you gain and get through cravings.">
 <link rel="canonical" href="https://velorapp.github.io/brightmorn">
-<meta property="og:title" content="Brightmorn: Drink Less">
-<meta property="og:description" content="Brightmorn helps you drink less, one day at a time. Track alcohol-free days, see what you gain and get through cravings. Private by design.">
+<meta property="og:site_name" content="Velorapp">
+<meta property="og:title" content="Brightmorn: Drink Less · Velorapp">
+<meta property="og:description" content="Brightmorn helps you drink less, one day at a time. Track alcohol-free days, see what you gain and get through cravings.">
 <meta property="og:url" content="https://velorapp.github.io/brightmorn">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#F4F6FA" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0A0E1C" media="(prefers-color-scheme: dark)">
+<meta property="og:image" content="https://velorapp.github.io/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F6F7FB" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#07080F" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap">
+<link rel="preload" href="/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/styles.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="/site.js" defer></script>
+<style>body{--hero-bg:linear-gradient(180deg, #5F80CC 0%, #96A0DA 42%, #CFC5E6 72%, var(--bg) 100%);--hero-ink:#10152F}@media (prefers-color-scheme: dark){body{--hero-bg:linear-gradient(180deg, #4C5AA6 0%, #3A3F86 38%, #262B5E 70%, var(--bg) 100%);--hero-ink:#F3F4FB;--hero-chip-bg:rgba(255,255,255,.14);--hero-chip-ink:#F3F4FB}}</style>
 </head>
-<body>
+<body class="has-hero">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="Velorapp home"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#3150F5"/><path d="M9 10.5l7 12 7-12" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24.6" cy="7.6" r="3" fill="#FFB020"/></svg><span>Velorapp</span></a>
-    <nav class="nav" aria-label="Main"><a href="/#apps" class="nav-hide" aria-current="page">Apps</a><a href="/#how-we-build" class="nav-hide">How we build</a><a href="/#faq" class="nav-hide">FAQ</a><a href="/support" class="nav-cta">Support</a></nav>
+    <a class="logo" href="/" aria-label="Velorapp home"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#4453FF"/><path d="M9 10.5l7 12 7-12" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24.6" cy="7.6" r="3" fill="#FFBE2E"/></svg><span>Velorapp</span></a>
+    <nav class="nav" aria-label="Main"><a href="/#apps" class="nav-hide" aria-current="page">Apps</a><a href="/#how" class="nav-hide">How we work</a><a href="/#faq" class="nav-hide">FAQ</a><a href="/support" class="nav-cta">Support</a></nav>
   </div>
 </header>
 <main id="main">
 
 <section class="app-hero">
   <div class="wrap">
-    <img src="/brightmorn-icon.png" alt="Brightmorn app icon" width="256" height="256">
+    <img class="big-icon" src="/brightmorn-icon.png" alt="Brightmorn app icon" width="256" height="256">
     <div>
       <h1>Brightmorn</h1>
       <p class="sub">Drink less, one day at a time. Track alcohol-free days, see what you gain and get through cravings.</p>
-      <div class="row"><span class="pill">Coming soon to the App Store</span><span class="pill">iPhone · English, Español</span></div>
+      <div class="row"><span class="chip"><span class="dot"></span>Coming soon to the App Store</span><span class="chip">Health &amp; Fitness</span><span class="chip">iPhone · English · Español</span></div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section" style="padding-top:clamp(48px,7vw,88px)">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head" data-reveal>
       <h2>Everything in one calm place</h2>
       <p>Your sky warms as your alcohol-free days add up.</p>
     </div>
-    <div class="features"><article class="feature"><h3>Choose your goal</h3><ul><li>An alcohol-free challenge of 14 to 90 days</li><li>Stop for good, one day at a time</li><li>A number of alcohol-free days each week</li><li>Cut back with a weekly drink limit</li></ul></article><article class="feature"><h3>Log in one tap</h3><p>Mark a day alcohol-free, or note how many drinks you had. No judgment: every alcohol-free day counts, even after a slip.</p></article><article class="feature"><h3>See what you gain</h3><p>Estimates of the money you keep, the drinks you skip and the calories you avoid, based on your own starting point.</p></article><article class="feature"><h3>Home Screen and Lock Screen</h3><p>Log today from the widget without opening the app. Lock Screen widgets show your count at a glance.</p></article><article class="feature"><h3>When it's hard</h3><p>Add your person and text or call them in one tap. After a slip, note what came before and plan your next time.</p></article><article class="feature"><h3>Stay on track</h3><p>A gentle evening check-in only on days you haven't logged, a calendar of your month, and milestones from day 1 to day 365.</p></article></div>
-    <div class="free-callout">
+    <div class="features"><article class="card" data-reveal style="--i:0"><span class="blob" style="background:var(--blue)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c.6 4.6 2.4 6.9 7 7.9-4.6 1-6.4 3.3-7 8.1-.6-4.8-2.4-7.1-7-8.1 4.6-1 6.4-3.3 7-7.9z"/></svg></span><h3>Choose your goal</h3><ul><li>An alcohol-free challenge of 14 to 90 days</li><li>Stop for good, one day at a time</li><li>A number of alcohol-free days each week</li><li>Cut back with a weekly drink limit</li></ul></article><article class="card" data-reveal style="--i:1"><span class="blob" style="background:var(--coral)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.9l10-6.5a1 1 0 0 0 0-1.7l-10-6.5A1 1 0 0 0 8 5.5z"/></svg></span><h3>Log in one tap</h3><p>Mark a day alcohol-free, or note how many drinks you had. No judgment: every alcohol-free day counts, even after a slip.</p></article><article class="card" data-reveal style="--i:2"><span class="blob" style="background:var(--mint)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><circle cx="12" cy="12" r="7.5"/></svg></span><h3>See what you gain</h3><p>Estimates of the money you keep, the drinks you skip and the calories you avoid, based on your own starting point.</p></article><article class="card" data-reveal style="--i:0"><span class="blob" style="background:var(--sun)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><circle cx="17" cy="17" r="3" opacity=".55"/></svg></span><h3>Home Screen and Lock Screen</h3><p>Log today from the widget without opening the app. Lock Screen widgets show your count at a glance.</p></article><article class="card" data-reveal style="--i:1"><span class="blob" style="background:var(--pink)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 15a3 3 0 0 1-3 3H9l-5 3V7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3z"/></svg></span><h3>When it's hard</h3><p>Add your person and text or call them in one tap. After a slip, note what came before and plan your next time.</p></article><article class="card" data-reveal style="--i:2"><span class="blob" style="background:var(--violet)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.4 5.6L20 9.3l-4.3 3.9 1.3 5.8L12 16l-5 3 1.3-5.8L4 9.3l5.6-.7z"/></svg></span><h3>Stay on track</h3><p>A gentle evening check-in only on days you haven't logged, a calendar of your month, and milestones from day 1 to day 365.</p></article></div>
+    <div class="callout" data-reveal>
       <h3>Free for everyone, no subscription needed</h3>
       <p>The 15-minute craving timer with breathing and ideas, support resources for your country, and a guide to stopping safely after heavy drinking.</p>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Private by design</h2>
+<section class="section" style="padding-top:0">
+  <div class="wrap split">
+    <article class="card" data-reveal>
+      <span class="blob" style="background:var(--mint)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+      <h3>Private by design</h3>
       <p>No account and no tracking. Your plan and your days stay on your iPhone. Discreet mode keeps the word "alcohol" off your Lock Screen and notifications.</p>
-    </div>
-    <div class="section-head" style="margin-bottom:0">
-      <h2>Brightmorn Pro</h2>
+      <p><a href="/brightmorn-privacy">Read the Brightmorn privacy policy</a></p>
+    </article>
+    <article class="card" data-reveal style="--i:1">
+      <span class="blob" style="background:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.4" fill="currentColor"/></svg></span>
+      <h3>Brightmorn Pro</h3>
       <p>The tracker, widgets, insights and milestones come with Brightmorn Pro.</p>
-    </div>
-    <div class="price-row">
-      <div class="price"><strong>$24.99 / year</strong><span>Starts with 7 days free</span></div>
-      <div class="price"><strong>$4.99 / month</strong><span>No trial</span></div>
-    </div>
+      <div class="prices">
+        <div class="price"><strong>$24.99<small style="font-size:16px;font-weight:600"> / year</small></strong><span>Starts with 7 days free</span></div>
+        <div class="price"><strong>$4.99<small style="font-size:16px;font-weight:600"> / month</small></strong><span>No trial</span></div>
+      </div>
+    </article>
+  </div>
+  <div class="wrap" style="margin-top:22px;display:grid;gap:12px">
     <p class="fineprint">US prices; prices in other countries are set by the App Store. Payment is charged to your Apple Account when you confirm the purchase or when the free trial ends. Subscriptions renew automatically unless canceled at least 24 hours before the end of the current period. Manage or cancel anytime in your Apple Account settings. See <a href="/subscriptions">Subscriptions &amp; Refunds</a> and <a href="/terms">Terms of Use</a>.</p>
     <p class="fineprint">Brightmorn is a habit tracker, not medical advice or treatment. If you drink heavily every day, stopping suddenly can be dangerous; talk to a doctor first.</p>
-    <div class="actions" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px">
-      <a class="btn btn-ghost" href="/brightmorn-support">Brightmorn support</a>
-      <a class="btn btn-ghost" href="/brightmorn-privacy">Brightmorn privacy</a>
+    <div class="links-row" style="margin-top:12px">
+      <a class="btn btn-ghost" href="/brightmorn-support">Brightmorn support <svg class="arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-ghost" href="/brightmorn-privacy">Privacy policy</a>
     </div>
   </div>
 </section>
@@ -80,32 +92,14 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a class="logo" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#3150F5"/><path d="M9 10.5l7 12 7-12" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24.6" cy="7.6" r="3" fill="#FFB020"/></svg><span>Velorapp</span></a>
-        <p>Calm, private iPhone apps. Each one does a single job well.</p>
+        <a class="logo" href="/"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#4453FF"/><path d="M9 10.5l7 12 7-12" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24.6" cy="7.6" r="3" fill="#FFBE2E"/></svg><span>Velorapp</span></a>
+        <p>An independent iPhone app studio. We design, build and look after every app ourselves.</p>
       </div>
-      <div>
-        <h4>Apps</h4>
-        <ul>
-          <li><a href="/brightmorn">Brightmorn</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Help</h4>
-        <ul>
-          <li><a href="/support">Support</a></li>
-          <li><a href="/brightmorn-support">Brightmorn support</a></li>
-          <li><a href="/#faq">FAQ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="/terms">Terms of Use</a></li>
-          <li><a href="/privacy">Privacy Policy</a></li>
-          <li><a href="/subscriptions">Subscriptions &amp; Refunds</a></li>
-        </ul>
-      </div>
+      <div><h4>Apps</h4><ul><li><a href="/brightmorn">Brightmorn</a></li><li><span>More on the way</span></li></ul></div>
+      <div><h4>Help</h4><ul><li><a href="/support">Support</a></li><li><a href="/#faq">FAQ</a></li><li><a href="/subscriptions">Cancel or refund</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="/terms">Terms of Use</a></li><li><a href="/privacy">Privacy Policy</a></li><li><a href="/subscriptions">Subscriptions &amp; Refunds</a></li></ul></div>
     </div>
+    <svg class="wordmark" viewBox="0 0 1000 250" aria-hidden="true" focusable="false"><defs><linearGradient id="wm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="wm-top"/><stop offset="1" class="wm-bottom"/></linearGradient></defs><text x="500" y="196" text-anchor="middle" textLength="992" lengthAdjust="spacingAndGlyphs" font-size="250" fill="url(#wm)">Velorapp</text></svg>
     <div class="foot-bottom">
       <span>© 2026 Velorapp. All rights reserved.</span>
       <span>Velorapp is the studio name of Mertcan Erbasi, an independent developer.</span>
