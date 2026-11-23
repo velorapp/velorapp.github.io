@@ -177,7 +177,7 @@ p { margin: 0; text-wrap: pretty; }
 .section-head p { color: var(--muted); font-size: clamp(17px, 1.6vw, 20px); max-width: 38em; }
 
 /* ---------- app shelf */
-.apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: 22px; }
+.apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 22px; }
 .app { --app-bg: var(--surface); --app-ink: var(--ink); --app-muted: var(--muted); position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: space-between; gap: 40px; min-height: 440px; padding: 30px; border-radius: var(--radius-l); background: var(--app-bg); color: var(--app-ink); text-decoration: none; overflow: hidden; box-shadow: var(--shadow-1); transform: perspective(1000px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(var(--lift, 0px)); transition: transform .5s var(--ease), box-shadow .5s var(--ease); }
 .app:hover { --lift: -6px; box-shadow: var(--shadow-2); }
 .app::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(600px circle at var(--gx, 50%) var(--gy, 0%), rgba(255, 255, 255, .28), transparent 40%); opacity: 0; transition: opacity .4s; }
@@ -199,6 +199,16 @@ p { margin: 0; text-wrap: pretty; }
 .soon-mark svg { width: 34px; height: 34px; animation: spin 14s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 .app.soon .chip { background: var(--surface); border-color: var(--line); color: var(--ink-2); }
+/* With the shelf in pairs, the next-app card is a slim strip under them. */
+.app.soon { grid-column: 1 / -1; flex-direction: row; align-items: center; justify-content: flex-start; gap: 22px; padding: 22px 26px; }
+.app.soon .soon-mark { width: 64px; height: 64px; border-radius: 17px; flex: none; }
+.app.soon .soon-mark svg { width: 24px; height: 24px; }
+.app.soon .soon-copy { flex: 1; min-width: 0; }
+.app.soon h3 { font-size: clamp(24px, 2.4vw, 30px); }
+.app.soon .tagline { margin-top: 4px; max-width: none; }
+@media (max-width: 600px) { .app.soon { flex-wrap: wrap; row-gap: 18px; } .app.soon .soon-copy { flex: 1 1 100%; order: 2; } .app.soon .chips { margin-left: auto; } }
+/* Out now: a steady mint dot instead of the coming-soon ping. */
+.chip .dot.live { background: var(--mint); animation: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--mint) 30%, transparent); }
 
 /* ---------- process */
 .steps { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; }
@@ -276,6 +286,7 @@ p { margin: 0; text-wrap: pretty; }
 .app-hero .sub { font-size: clamp(19px, 2.2vw, 24px); margin-top: 16px; max-width: 30em; opacity: .9; }
 .app-hero .row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; align-items: center; }
 .app-hero .chip { background: var(--hero-chip-bg, rgba(255, 255, 255, .62)); border-color: transparent; color: var(--hero-chip-ink, #141833); backdrop-filter: blur(8px); }
+.app-hero .get { margin-top: 28px; }
 .has-hero .site-header:not(.scrolled) .logo, .has-hero .site-header:not(.scrolled) .nav a.nav-hide { color: var(--hero-ink); }
 .has-hero .site-header:not(.scrolled) .nav a.nav-hide:hover, .has-hero .site-header:not(.scrolled) .nav a[aria-current="page"] { background: rgba(255, 255, 255, .22); }
 @media (max-width: 680px) { .app-hero .wrap { grid-template-columns: 1fr; gap: 22px; } .app-hero .big-icon { width: 120px; height: 120px; border-radius: 27px; } }
